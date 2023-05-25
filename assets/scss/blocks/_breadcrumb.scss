@@ -1,0 +1,17 @@
+.beadcrumb__item {
+   display: inline-block;
+   font-weight: 600;
+}
+
+.beadcrumb__item:not(:last-child)::after {
+   content: ' >  ';
+}
+
+.beadcrumb__link {
+   font-weight: 500;
+   color: #969696;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}

@@ -1,0 +1,158 @@
+.profile {
+   padding: 34px 0 200px;
+}
+
+.profile__row {
+   display: flex;
+   column-gap: 26px;
+   align-items: flex-start;
+}
+
+.info-profile {
+   max-width: 286px;
+   width: 100%;
+   padding: 24px 36px 30px 40px;
+   background-color: var(--light-color);
+   border-radius: 12px;;
+}
+
+.info-profile__head {
+   display: flex;
+   align-items: center;
+   column-gap: 17px;
+   margin-bottom: 29px;
+}
+
+.info-profile__icon {
+   width: 43px;
+   height: 43px;
+   border-radius: 50%;
+}
+
+.info-profile__name {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+   color: var(--secondary-color);
+   display: flex;
+   align-items: center;
+   column-gap: 15px;
+}
+
+.info-profile-close {
+   font-weight: 500;
+   font-size: 16px;
+   color: #AEA9A9;
+   display: none;
+}
+
+.info-profile__block {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   font-weight: 500;
+   line-height: 19px;
+   color: #606060;
+
+   &:not(:last-child) {
+      padding-bottom: 15px;
+      border-bottom: 1px solid #EFEFEF;
+      margin-bottom: 15px;
+   }
+
+   a:hover {
+      color: var(--primary-color);
+   }
+}
+
+.info-profile__status {
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+}
+
+.info-profile__add-ads {
+   font-weight: 600;
+   color: #E09709;
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+
+.info-profile__add-orders {
+   font-weight: 600;
+   color: var(--secondary-color);
+   display: flex;
+   align-items: center;
+   column-gap: 10px;
+}
+
+.settings-profile {
+   padding: 28px 48px 74px 48px;
+   background-color: var(--light-color);
+   border-radius: 12px;
+   width: 100%;
+}
+
+.settings-profile__title {
+   font-weight: 600;
+   font-size: 25px;
+   color: var(--dark-color);
+   margin-bottom: 21px;
+}
+
+.settings-profile__box {
+   display: flex;
+   column-gap: 25px;
+   margin-bottom: 35px;
+}
+
+.settings-profile__input {
+   max-width: 226px;
+   width: 100%;
+}
+
+.settings-profile__input:nth-of-type(2) {
+   max-width: 294px;
+   width: 100%;
+}
+
+.settings-profile__input label, .settings-profile__status-text {
+   font-weight: 500;
+   font-size: 16px;
+   color: #606060;
+   display: block;
+   margin-bottom: 7px;
+}  
+
+.settings-profile__input input {
+   width: 100%;
+   padding: 12px 18px;
+   border: 1px solid #B1B1B1;
+   border-radius: 8px;
+}
+
+.settings-profile__status {
+   max-width: 190px;
+}
+
+.settings-profile__status-item {
+   background-color: #FDFAF4;
+   border-radius: 8px;
+   width: 100%;
+   padding: 12px 23px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 5px;
+   font-weight: 600;
+   color: #E09709;
+}
+
+.settings-profile-btn {
+   min-width: 226px;
+   min-height: 45px;
+   font-weight: 600;
+}
+
+
