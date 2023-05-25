@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>GlobalCoalTrade</title>
+   <link rel="stylesheet" href="assets/fonts/fonts.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/media.css">
+   <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+   <div class="overlay"></div>
+
+   <div class="overlay-blur"></div>
+
+   <div class="form-modal" data-modal-form>
+      <form class="form-modal__container" action="#">
+
+         <button class="form-modal__close-btn" type="button">
+            <svg data-modal-form-close-btn width="30" height="30" viewBox="0 0 30 30" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M28.4559 0.878679C27.2843 -0.292894 25.3848 -0.292894 24.2132 0.878679L14.6673 10.4246L5.12136 0.878684C3.94979 -0.292889 2.05029 -0.292889 0.878721 0.878684C-0.292852 2.05026 -0.292852 3.94975 0.878721 5.12132L10.4247 14.6673L0.878705 24.2132C-0.292866 25.3848 -0.292868 27.2843 0.878705 28.4558C2.05028 29.6274 3.94977 29.6274 5.12135 28.4558L14.6673 18.9099L24.2132 28.4558C25.3848 29.6274 27.2843 29.6274 28.4559 28.4558C29.6275 27.2843 29.6275 25.3848 28.4559 24.2132L18.9099 14.6673L28.4559 5.12132C29.6274 3.94975 29.6274 2.05025 28.4559 0.878679Z" />
+            </svg>
+         </button>
+
+         <div class="form-modal__head">
+            <button class="form-modal__title active" type="button" data-modal-form-tabs-btn>Войти</button>
+            <button class="form-modal__title" type="button" data-modal-form-tabs-btn>Регистрация</button>
+         </div>
+
+         <div class="form-modal__body">
+            <div class="form-modal__login active" data-modal-form-tabs-content>
+               <div class="form-modal__input">
+                  <label>
+                     <span>Почта</span>
+                     /Телефон
+                  </label>
+                  <input type="text">
+               </div>
+               <div class="form-modal__input">
+                  <label>Пароль</label>
+                  <input type="password">
+               </div>
+               <a class="form-modal__btn btn btn-primary" type="button" href="profile.html">
+                  Войти
+                  <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.5167 6.17387C19.528 5.75166 19.3726 5.32581 19.0504 5.00358L14.5413 0.494517C13.9187 -0.128055 12.9093 -0.128055 12.2868 0.494517C11.6642 1.11709 11.6642 2.12648 12.2868 2.74905L14.0747 4.53697L1.5942 4.53697C0.713745 4.53697 0 5.25072 0 6.13117C0 7.01162 0.713747 7.72536 1.5942 7.72536L14.1658 7.72536L12.2869 9.60421C11.6644 10.2268 11.6644 11.2362 12.2869 11.8587C12.9095 12.4813 13.9189 12.4813 14.5415 11.8587L19.0505 7.34968C19.3742 7.02605 19.5296 6.59789 19.5167 6.17387Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <p class="form-modal__text">
+                  Здесь Вы легко сможете найти поставщика любой группы углей или новые рынки сбыта для своей продукции.
+                  Благодаря аукционной системе
+               </p>
+            </div>
+            <div class="form-modal__signup" data-modal-form-tabs-content>
+               <div class="form-modal__input">
+                  <label>
+                     <span>Почта</span>
+                     /Телефон
+                  </label>
+                  <input type="text">
+               </div>
+               <div class="form-modal__input">
+                  <label>Пароль</label>
+                  <input type="password">
+               </div>
+               <div class="form-modal__input">
+                  <label>Повторите пароль</label>
+                  <input type="password">
+               </div>
+               <div class="form-modal__input">
+                  <label>Ваш email</label>
+                  <input type="password">
+               </div>
+               <div class="form-modal__input">
+                  <label for="">Страна</label>
+                  <select>
+                     <option value="">Выбрать страну</option>
+                     <option value="">Выбрать страну</option>
+                     <option value="">Выбрать страну</option>
+                     <option value="">Выбрать страну</option>
+                     <option value="">Выбрать страну</option>
+                  </select>
+               </div>
+               <div class="form-modal__input">
+                  <label for="">Регион</label>
+                  <select>
+                     <option value="">Выбрать регион</option>
+                     <option value="">Выбрать регион</option>
+                     <option value="">Выбрать регион</option>
+                     <option value="">Выбрать регион</option>
+                     <option value="">Выбрать регион</option>
+                  </select>
+               </div>
+               <a class="form-modal__btn btn btn-primary" type="button" href="profile.html">
+                  Зарегистрироваться
+                  <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.5167 6.17387C19.528 5.75166 19.3726 5.32581 19.0504 5.00358L14.5413 0.494517C13.9187 -0.128055 12.9093 -0.128055 12.2868 0.494517C11.6642 1.11709 11.6642 2.12648 12.2868 2.74905L14.0747 4.53697L1.5942 4.53697C0.713745 4.53697 0 5.25072 0 6.13117C0 7.01162 0.713747 7.72536 1.5942 7.72536L14.1658 7.72536L12.2869 9.60421C11.6644 10.2268 11.6644 11.2362 12.2869 11.8587C12.9095 12.4813 13.9189 12.4813 14.5415 11.8587L19.0505 7.34968C19.3742 7.02605 19.5296 6.59789 19.5167 6.17387Z"
+                        fill="white" />
+                  </svg>
+               </a>
+               <p class="form-modal__text">
+                  Здесь Вы легко сможете найти поставщика любой группы углей или новые рынки сбыта для своей продукции.
+                  Благодаря аукционной системе
+               </p>
+            </div>
+         </div>
+      </form>
+   </div>
+
+   <div class="mobile-menu">
+      <button class="mobile-menu__close-btn">
+         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M15.2172 0.238628C14.899 -0.0795429 14.3832 -0.0795425 14.065 0.238628L7.72792 6.57572L1.39083 0.238629C1.07266 -0.0795416 0.556807 -0.0795416 0.238636 0.238629C-0.0795351 0.5568 -0.0795347 1.07266 0.238636 1.39083L6.57573 7.72792L0.238628 14.065C-0.0795427 14.3832 -0.0795427 14.899 0.238628 15.2172C0.556799 15.5354 1.07266 15.5354 1.39083 15.2172L7.72792 8.88012L14.065 15.2172C14.3832 15.5354 14.8991 15.5354 15.2172 15.2172C15.5354 14.899 15.5354 14.3832 15.2172 14.065L8.88012 7.72792L15.2172 1.39083C15.5354 1.07266 15.5354 0.556799 15.2172 0.238628Z"
+               fill="black" />
+         </svg>
+
+      </button>
+      <ul class="mobile-menu__list">
+         <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="orders.html">Заявки на покупку</a>
+         </li>
+         <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="orders.html">Продажа</a>
+         </li>
+         <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">О проекте</a>
+         </li>
+         <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="help.html">Помощь</a>
+         </li>
+         <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="blog.html">Блог</a>
+         </li>
+      </ul>
+   </div>
+
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <div class="header__row">
+               <a class="header__logo logo" href="index.html">
+                  <img src="assets/images/logo/logo-dark.png" alt="Global Coal Trade">
+               </a>
+               <nav class="header__menu menu">
+                  <div class="menu__orders">
+                     <a class="menu__orders-link" href="orders.html">
+                        Заявки на покупку
+                     </a>
+                     <a class="menu__orders-link" href="orders.html">
+                        Продажа
+                     </a>
+                  </div>
+                  <ul class="menu__list">
+                     <li class="meni__list-item">
+                        <a class="menu__list-link" href="#">О проекте</a>
+                     </li>
+                     <li class="meni__list-item">
+                        <a class="menu__list-link" href="help.html">Помощь</a>
+                     </li>
+                     <li class="meni__list-item">
+                        <a class="menu__list-link" href="blog.html">Блог</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__btns">
+                  <button class="header__languages" type="button" id="lang-btn">
+                     RU
+                     <ul class="header__languages-list">
+                        <li class="header__languages-item">
+                           <a class="header__languages-link" href="#">EN</a>
+                           <a class="header__languages-link" href="#">DE</a>
+                        </li>
+                     </ul>
+                  </button>
+                  <button class="header__btn none" type="button" data-modal-form-open-btn>
+                     Вход/регистрация
+                     <svg class="header-button-icon" width="15" height="20" viewBox="0 0 15 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M12.4185 6.72115C12.4185 9.44626 10.2093 11.6554 7.48424 11.6554C4.75913 11.6554 2.55 9.44626 2.55 6.72115C2.55 3.99605 4.75913 1.78691 7.48424 1.78691C10.2093 1.78691 12.4185 3.99605 12.4185 6.72115ZM10.5734 12.5938C12.6814 11.4826 14.1185 9.2697 14.1185 6.72115C14.1185 3.05716 11.1482 0.0869141 7.48424 0.0869141C3.82025 0.0869141 0.85 3.05716 0.85 6.72115C0.85 9.2697 2.28705 11.4826 4.39504 12.5938C1.80287 13.77 0 16.3808 0 19.4127H1.7C1.7 16.2182 4.28969 13.6285 7.48424 13.6285C10.6788 13.6285 13.2685 16.2182 13.2685 19.4127H14.9685C14.9685 16.3808 13.1656 13.77 10.5734 12.5938Z" />
+                     </svg>
+                  </button>
+                  <button class="header__user" type="button">
+                     <img class="header__user-icon" src="assets/images/icons/avatar.png" alt="">
+                     <img class="header__user-mobile" src="assets/images/icons/mobile-user.svg" alt="">
+                     <h4 class="header__user-name">RedOnesss</h4>
+                     <svg class="header__user-arrow" width="9" height="6" viewBox="0 0 9 6" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M4.30403 5.12068C4.53071 5.12718 4.75949 5.04392 4.9325 4.87091L8.34558 1.45784C8.67908 1.12434 8.67908 0.583625 8.34558 0.250125C8.01208 -0.0833752 7.47137 -0.0833751 7.13787 0.250125L4.29713 3.09086L1.45688 0.250609C1.12338 -0.082891 0.58267 -0.082891 0.24917 0.250609C-0.0843306 0.58411 -0.0843306 1.12482 0.24917 1.45832L3.66224 4.87139C3.83864 5.04779 4.07301 5.13089 4.30403 5.12068Z"
+                           fill="#241B3F" />
+                     </svg>
+                     <ul class="header-dropdown">
+                        <div class="header-dropdown__block">
+                           <a class="header-dropdown__profile" href="profile.html">Мой профиль</a>
+                        </div>
+                        <div class="header-dropdown__block">
+                           <a class="header-dropdown__my-ads" href="my-applications.html">
+                              Мои объявления
+                           </a>
+                           <a class="header-dropdown__add-ads" href="create-order.html">
+                              Добавить объявление
+                              <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <rect y="0.5" width="18" height="18" rx="9" fill="#E09709" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.26226 13.1323C8.26226 13.5155 8.57291 13.8261 8.95611 13.8261C9.33931 13.8261 9.64995 13.5155 9.64995 13.1323V10.3569H12.4252C12.8084 10.3569 13.1191 10.0462 13.1191 9.66302C13.1191 9.27982 12.8084 8.96918 12.4252 8.96918H9.64995V6.19384C9.64995 5.81064 9.33931 5.5 8.95611 5.5C8.57291 5.5 8.26226 5.81064 8.26226 6.19384V8.96918H5.48681C5.10361 8.96918 4.79297 9.27982 4.79297 9.66302C4.79297 10.0462 5.10361 10.3569 5.48681 10.3569H8.26226V13.1323Z"
+                                    fill="white" />
+                              </svg>
+                           </a>
+                        </div>
+
+                        <div class="header-dropdown__block">
+                           <a class="header-dropdown__my-orders" href="my-applications.html">Мои заявки</a>
+                           <a class="header-dropdown__add-orders" href="create-order.html">
+                              Добавить заявку
+                              <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <rect y="0.5" width="18" height="18" rx="9" fill="#241A3E" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.26226 13.1323C8.26226 13.5155 8.57291 13.8261 8.95611 13.8261C9.33931 13.8261 9.64995 13.5155 9.64995 13.1323V10.3569H12.4252C12.8084 10.3569 13.1191 10.0462 13.1191 9.66302C13.1191 9.27982 12.8084 8.96918 12.4252 8.96918H9.64995V6.19384C9.64995 5.81064 9.33931 5.5 8.95611 5.5C8.57291 5.5 8.26226 5.81064 8.26226 6.19384V8.96918H5.48681C5.10361 8.96918 4.79297 9.27982 4.79297 9.66302C4.79297 10.0462 5.10361 10.3569 5.48681 10.3569H8.26226V13.1323Z"
+                                    fill="white" />
+                              </svg>
+                           </a>
+                        </div>
+
+                        <div class="header-dropdown__block">
+                           <a class="header-dropdown__response-link" href="response.html">
+                              Мои отклики на заявки
+                           </a>
+                           <a class="header-dropdown__response-link" href="response.html">
+                              Мои отклики на объявления
+                           </a>
+                        </div>
+                     </ul>
+                  </button>
+                  <button class="header__burger">
+                     <span class="header__burger-line line-1"></span>
+                     <span class="header__burger-line line-2"></span>
+                     <span class="header__burger-line line-3"></span>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <main class="main main-grey">
+         <section class="orders">
+            <div class="container">
+               <ul class="blog__beadcrumb beadcrumb">
+                  <li class="beadcrumb__item">
+                     <a class="beadcrumb__link" href="index.html">Главная</a>
+                  </li>
+                  <li class="beadcrumb__item">Заявки на покупку</li>
+               </ul>
+               <div class="orders__head">
+                  <h1 class="orders__title">Заявки на покупку</h1>
+                  <div class="orders__btns">
+                     <a class="orders__btn" href="create-order.html">
+                        Разместить заявку
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="23" height="23" rx="11.5" fill="white" />
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M10.5834 16.0833C10.5834 16.5896 10.9938 17 11.5001 17C12.0064 17 12.4168 16.5896 12.4168 16.0833V12.4167H16.0833C16.5896 12.4167 17 12.0063 17 11.5C17 10.9937 16.5896 10.5833 16.0833 10.5833H12.4168V6.91667C12.4168 6.41041 12.0063 6 11.5001 6C10.9938 6 10.5834 6.4104 10.5834 6.91667V10.5833H6.91667C6.41041 10.5833 6 10.9937 6 11.5C6 12.0063 6.4104 12.4167 6.91667 12.4167H10.5834V16.0833Z"
+                              fill="#E09709" />
+                        </svg>
+                     </a>
+                     <button class="orders__btn-filter">
+                        Фильтр
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <mask id="path-1-inside-1_165_700" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M2.9498 0C2.59082 0 2.2998 0.291014 2.2998 0.649999V2.08215C0.980689 2.39754 0 3.58424 0 5C0 6.41576 0.980689 7.60246 2.2998 7.91785V14.35C2.2998 14.709 2.59082 15 2.9498 15C3.30879 15 3.5998 14.709 3.5998 14.35V7.94003C4.96925 7.66214 6 6.45144 6 5C6 3.54856 4.96925 2.33786 3.5998 2.05997V0.65C3.5998 0.291015 3.30879 0 2.9498 0ZM9.15 0C8.79101 0 8.5 0.291014 8.5 0.649999V8.04148C7.08114 8.27952 6 9.5135 6 11C6 12.4865 7.08114 13.7205 8.5 13.9585V14.35C8.5 14.709 8.79101 15 9.15 15C9.50898 15 9.8 14.709 9.8 14.35V13.8922C11.0685 13.5421 12 12.3798 12 11C12 9.62019 11.0685 8.45794 9.8 8.10785V0.65C9.8 0.291015 9.50898 0 9.15 0ZM14.3999 0.649999C14.3999 0.291014 14.6909 0 15.0499 0C15.4089 0 15.6999 0.291015 15.6999 0.65V4.08208C17.0192 4.39737 18 5.58414 18 7C18 8.41586 17.0192 9.60264 15.6999 9.91792V14.35C15.6999 14.709 15.4089 15 15.0499 15C14.6909 15 14.3999 14.709 14.3999 14.35V9.93997C13.0306 9.66197 12 8.45134 12 7C12 5.54866 13.0306 4.33803 14.3999 4.06003V0.649999Z" />
+                           </mask>
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2.9498 0C2.59082 0 2.2998 0.291014 2.2998 0.649999V2.08215C0.980689 2.39754 0 3.58424 0 5C0 6.41576 0.980689 7.60246 2.2998 7.91785V14.35C2.2998 14.709 2.59082 15 2.9498 15C3.30879 15 3.5998 14.709 3.5998 14.35V7.94003C4.96925 7.66214 6 6.45144 6 5C6 3.54856 4.96925 2.33786 3.5998 2.05997V0.65C3.5998 0.291015 3.30879 0 2.9498 0ZM9.15 0C8.79101 0 8.5 0.291014 8.5 0.649999V8.04148C7.08114 8.27952 6 9.5135 6 11C6 12.4865 7.08114 13.7205 8.5 13.9585V14.35C8.5 14.709 8.79101 15 9.15 15C9.50898 15 9.8 14.709 9.8 14.35V13.8922C11.0685 13.5421 12 12.3798 12 11C12 9.62019 11.0685 8.45794 9.8 8.10785V0.65C9.8 0.291015 9.50898 0 9.15 0ZM14.3999 0.649999C14.3999 0.291014 14.6909 0 15.0499 0C15.4089 0 15.6999 0.291015 15.6999 0.65V4.08208C17.0192 4.39737 18 5.58414 18 7C18 8.41586 17.0192 9.60264 15.6999 9.91792V14.35C15.6999 14.709 15.4089 15 15.0499 15C14.6909 15 14.3999 14.709 14.3999 14.35V9.93997C13.0306 9.66197 12 8.45134 12 7C12 5.54866 13.0306 4.33803 14.3999 4.06003V0.649999Z"
+                              fill="white" />
+                           <path
+                              d="M2.2998 2.08215L2.6021 3.34651L3.5998 3.10797V2.08215H2.2998ZM2.2998 7.91785H3.5998V6.89203L2.6021 6.65349L2.2998 7.91785ZM3.5998 7.94003L3.34128 6.66599L2.2998 6.87733V7.94003H3.5998ZM3.5998 2.05997H2.2998V3.12267L3.34128 3.33401L3.5998 2.05997ZM8.5 8.04148L8.71509 9.32356L9.8 9.14155V8.04148H8.5ZM8.5 13.9585H9.8V12.8585L8.71509 12.6764L8.5 13.9585ZM9.8 13.8922L9.45413 12.639L8.5 12.9023V13.8922H9.8ZM9.8 8.10785H8.5V9.09765L9.45413 9.36099L9.8 8.10785ZM15.6999 4.08208H14.3999V5.10801L15.3977 5.34648L15.6999 4.08208ZM15.6999 9.91792L15.3977 8.65353L14.3999 8.89199V9.91792H15.6999ZM14.3999 9.93997H15.6999V8.87738L14.6586 8.66596L14.3999 9.93997ZM14.3999 4.06003L14.6586 5.33404L15.6999 5.12262V4.06003H14.3999ZM3.5998 0.649999C3.5998 1.00899 3.30879 1.3 2.9498 1.3V-1.3C1.87285 -1.3 0.999805 -0.426957 0.999805 0.649999H3.5998ZM3.5998 2.08215V0.649999H0.999805V2.08215H3.5998ZM1.3 5C1.3 4.19944 1.85461 3.52523 2.6021 3.34651L1.99751 0.817787C0.106763 1.26985 -1.3 2.96905 -1.3 5H1.3ZM2.6021 6.65349C1.85461 6.47477 1.3 5.80056 1.3 5H-1.3C-1.3 7.03095 0.106764 8.73015 1.99751 9.18221L2.6021 6.65349ZM3.5998 14.35V7.91785H0.999805V14.35H3.5998ZM2.9498 13.7C3.30879 13.7 3.5998 13.991 3.5998 14.35H0.999805C0.999805 15.427 1.87285 16.3 2.9498 16.3V13.7ZM2.2998 14.35C2.2998 13.991 2.59082 13.7 2.9498 13.7V16.3C4.02676 16.3 4.8998 15.427 4.8998 14.35H2.2998ZM2.2998 7.94003V14.35H4.8998V7.94003H2.2998ZM4.7 5C4.7 5.82097 4.11675 6.50864 3.34128 6.66599L3.85833 9.21406C5.82174 8.81565 7.3 7.08191 7.3 5H4.7ZM3.34128 3.33401C4.11675 3.49136 4.7 4.17903 4.7 5H7.3C7.3 2.91809 5.82174 1.18435 3.85833 0.785937L3.34128 3.33401ZM2.2998 0.65V2.05997H4.8998V0.65H2.2998ZM2.9498 1.3C2.59082 1.3 2.2998 1.00899 2.2998 0.65H4.8998C4.8998 -0.426955 4.02676 -1.3 2.9498 -1.3V1.3ZM9.8 0.649999C9.8 1.00899 9.50898 1.3 9.15 1.3V-1.3C8.07304 -1.3 7.2 -0.426956 7.2 0.649999H9.8ZM9.8 8.04148V0.649999H7.2V8.04148H9.8ZM7.3 11C7.3 10.1589 7.91206 9.45828 8.71509 9.32356L8.28491 6.7594C6.25023 7.10075 4.7 8.86806 4.7 11H7.3ZM8.71509 12.6764C7.91206 12.5417 7.3 11.8411 7.3 11H4.7C4.7 13.1319 6.25023 14.8992 8.28491 15.2406L8.71509 12.6764ZM9.8 14.35V13.9585H7.2V14.35H9.8ZM9.15 13.7C9.50898 13.7 9.8 13.991 9.8 14.35H7.2C7.2 15.427 8.07304 16.3 9.15 16.3V13.7ZM8.5 14.35C8.5 13.991 8.79102 13.7 9.15 13.7V16.3C10.227 16.3 11.1 15.427 11.1 14.35H8.5ZM8.5 13.8922V14.35H11.1V13.8922H8.5ZM10.7 11C10.7 11.78 10.1735 12.4405 9.45413 12.639L10.1459 15.1453C11.9634 14.6437 13.3 12.9796 13.3 11H10.7ZM9.45413 9.36099C10.1735 9.55954 10.7 10.22 10.7 11H13.3C13.3 9.02042 11.9634 7.35635 10.1459 6.8547L9.45413 9.36099ZM8.5 0.65V8.10785H11.1V0.65H8.5ZM9.15 1.3C8.79102 1.3 8.5 1.00899 8.5 0.65H11.1C11.1 -0.426957 10.227 -1.3 9.15 -1.3V1.3ZM15.0499 -1.3C13.9729 -1.3 13.0999 -0.426956 13.0999 0.649999H15.6999C15.6999 1.00899 15.4089 1.3 15.0499 1.3V-1.3ZM16.9999 0.65C16.9999 -0.426957 16.1269 -1.3 15.0499 -1.3V1.3C14.6909 1.3 14.3999 1.00899 14.3999 0.65H16.9999ZM16.9999 4.08208V0.65H14.3999V4.08208H16.9999ZM15.3977 5.34648C16.1453 5.52513 16.7 6.19938 16.7 7H19.3C19.3 4.9689 17.893 3.2696 16.0021 2.81769L15.3977 5.34648ZM16.7 7C16.7 7.80062 16.1453 8.47487 15.3977 8.65353L16.0021 11.1823C17.893 10.7304 19.3 9.0311 19.3 7H16.7ZM16.9999 14.35V9.91792H14.3999V14.35H16.9999ZM15.0499 16.3C16.1269 16.3 16.9999 15.427 16.9999 14.35H14.3999C14.3999 13.991 14.6909 13.7 15.0499 13.7V16.3ZM13.0999 14.35C13.0999 15.427 13.9729 16.3 15.0499 16.3V13.7C15.4089 13.7 15.6999 13.991 15.6999 14.35H13.0999ZM13.0999 9.93997V14.35H15.6999V9.93997H13.0999ZM14.6586 8.66596C13.8832 8.50854 13.3 7.82091 13.3 7H10.7C10.7 9.08177 12.178 10.8154 14.1412 11.214L14.6586 8.66596ZM13.3 7C13.3 6.17909 13.8832 5.49146 14.6586 5.33404L14.1412 2.78602C12.178 3.1846 10.7 4.91823 10.7 7H13.3ZM13.0999 0.649999V4.06003H15.6999V0.649999H13.0999Z"
+                              fill="#777777" mask="url(#path-1-inside-1_165_700)" />
+                        </svg>
+
+                     </button>
+                  </div>
+               </div>
+               <div class="orders__row">
+                  <div class="orders-items">
+                     <div class="orders-items__item">
+                        <div class="orders-items__item-top">
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Марка:</span>
+                              <span class="orders-items__item-brand">Ж</span>
+                           </div>
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Нужный объем:</span>
+                              <span class="orders-items__item-weight">30 000 тонн</span>
+                           </div>
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Cтрана/регион:</span>
+                              <div class="orders-items__item-country">
+                                 <img src="assets/images/icons/ru.svg" alt="Ru">
+                                 Россия
+                              </div>
+                           </div>                           
+                           <div class="orders-items__item-price">до 300р</div>
+                           <div class="orders-items__item-date">12.03.2022</div>
+                        </div>
+                        <div class="orders-items__item-options">
+                           <h3 class="orders-items__item-options__title">Параметры:</h3>
+                           <div class="orders-items__item-options__box">
+                              <div class="orders-items__item-options__descr">
+                                 Net Calorific Valve (Kcal/kg)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Total Moisture (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Volatile Matter (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Sulphur (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Ash (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="orders-items__item-comments">
+                           <h3 class="orders-items__item-comments__title">Комментарий</h3>
+                           <p class="orders-items__item-comments__text">
+                              Здесь Вы легко сможете найти поставщика любой группы углей или новые рынки сбыта для своей
+                              продукции. Благодаря аукционной системе и широкому охвату целевой аудитории
+                           </p>
+                        </div>
+                        <div class="orders-items__item-bottom">
+                           <div class="orders-items__item-bottom-box">
+                              <img src="assets/images/icons/reviews.svg" alt="Отзывы">
+                              <div>Отзывы: <b>15</b></div>
+                           </div>
+                           <div class="orders-items__item-bottom-box">
+                              <div>Сделок: <b>35</b></div>
+                           </div>
+                           <div class="orders-items__item-bottom-box">
+                              <span>Проверен</span>
+                              <img src="assets/images/icons/status.svg" alt="Статус">
+                           </div>
+                           <button class="orders-items__item-bottom__btn" type="button">
+                              Сделать предложение
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="9" cy="9" r="9" fill="#E09709" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.9488 8.52849C11.9553 8.30181 11.872 8.07303 11.699 7.90002L8.28596 4.48694C7.95246 4.15344 7.41175 4.15344 7.07825 4.48694C6.74475 4.82044 6.74475 5.36115 7.07825 5.69465L9.91898 8.53539L7.07873 11.3756C6.74523 11.7091 6.74523 12.2498 7.07873 12.5833C7.41224 12.9169 7.95295 12.9169 8.28645 12.5833L11.6995 9.17028C11.8759 8.99388 11.959 8.75951 11.9488 8.52849Z"
+                                    fill="white" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="orders-items__item">
+                        <div class="orders-items__item-top">
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Марка:</span>
+                              <span class="orders-items__item-brand">Ж</span>
+                           </div>
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Нужный объем:</span>
+                              <span class="orders-items__item-weight">30 000 тонн</span>
+                           </div>
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Cтрана/регион:</span>
+                              <div class="orders-items__item-country">
+                                 <img src="assets/images/icons/ru.svg" alt="Ru">
+                                 Россия
+                              </div>
+                           </div>                           
+                           <div class="orders-items__item-price">до 300р</div>
+                           <div class="orders-items__item-date">12.03.2022</div>
+                        </div>
+                        <div class="orders-items__item-options">
+                           <h3 class="orders-items__item-options__title">Параметры:</h3>
+                           <div class="orders-items__item-options__box">
+                              <div class="orders-items__item-options__descr">
+                                 Net Calorific Valve (Kcal/kg)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Total Moisture (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Volatile Matter (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Sulphur (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Ash (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="orders-items__item-comments">
+                           <h3 class="orders-items__item-comments__title">Комментарий</h3>
+                           <p class="orders-items__item-comments__text">
+                              Здесь Вы легко сможете найти поставщика любой группы углей или новые рынки сбыта для своей
+                              продукции. Благодаря аукционной системе и широкому охвату целевой аудитории
+                           </p>
+                        </div>
+                        <div class="orders-items__item-bottom">
+                           <div class="orders-items__item-bottom-box">
+                              <img src="assets/images/icons/reviews.svg" alt="Отзывы">
+                              <div>Отзывы: <b>15</b></div>
+                           </div>
+                           <div class="orders-items__item-bottom-box">
+                              <div>Сделок: <b>35</b></div>
+                           </div>
+                           <div class="orders-items__item-bottom-box">
+                              <span>Проверен</span>
+                              <img src="assets/images/icons/status.svg" alt="Статус">
+                           </div>
+                           <button class="orders-items__item-bottom__btn" type="button">
+                              Сделать предложение
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="9" cy="9" r="9" fill="#E09709" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.9488 8.52849C11.9553 8.30181 11.872 8.07303 11.699 7.90002L8.28596 4.48694C7.95246 4.15344 7.41175 4.15344 7.07825 4.48694C6.74475 4.82044 6.74475 5.36115 7.07825 5.69465L9.91898 8.53539L7.07873 11.3756C6.74523 11.7091 6.74523 12.2498 7.07873 12.5833C7.41224 12.9169 7.95295 12.9169 8.28645 12.5833L11.6995 9.17028C11.8759 8.99388 11.959 8.75951 11.9488 8.52849Z"
+                                    fill="white" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                     <div class="orders-items__item">
+                        <div class="orders-items__item-top">
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Марка:</span>
+                              <span class="orders-items__item-brand">Ж</span>
+                           </div>
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Нужный объем:</span>
+                              <span class="orders-items__item-weight">30 000 тонн</span>
+                           </div>
+                           <div class="orders-items__item-box">
+                              <span class="orders-items__item-category">Cтрана/регион:</span>
+                              <div class="orders-items__item-country">
+                                 <img src="assets/images/icons/ru.svg" alt="Ru">
+                                 Россия
+                              </div>
+                           </div>                           
+                           <div class="orders-items__item-price">до 300р</div>
+                           <div class="orders-items__item-date">12.03.2022</div>
+                        </div>
+                        <div class="orders-items__item-options">
+                           <h3 class="orders-items__item-options__title">Параметры:</h3>
+                           <div class="orders-items__item-options__box">
+                              <div class="orders-items__item-options__descr">
+                                 Net Calorific Valve (Kcal/kg)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Total Moisture (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Volatile Matter (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Sulphur (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                              <div class="orders-items__item-options__descr">
+                                 Ash (%)
+                                 <b class="orders-items__item-options__value">- 35</b>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="orders-items__item-comments">
+                           <h3 class="orders-items__item-comments__title">Комментарий</h3>
+                           <p class="orders-items__item-comments__text">
+                              Здесь Вы легко сможете найти поставщика любой группы углей или новые рынки сбыта для своей
+                              продукции. Благодаря аукционной системе и широкому охвату целевой аудитории
+                           </p>
+                        </div>
+                        <div class="orders-items__item-bottom">
+                           <div class="orders-items__item-bottom-box">
+                              <img src="assets/images/icons/reviews.svg" alt="Отзывы">
+                              <div>Отзывы: <b>15</b></div>
+                           </div>
+                           <div class="orders-items__item-bottom-box">
+                              <div>Сделок: <b>35</b></div>
+                           </div>
+                           <div class="orders-items__item-bottom-box">
+                              <span>Проверен</span>
+                              <img src="assets/images/icons/status.svg" alt="Статус">
+                           </div>
+                           <button class="orders-items__item-bottom__btn" type="button">
+                              Сделать предложение
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="9" cy="9" r="9" fill="#E09709" />
+                                 <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.9488 8.52849C11.9553 8.30181 11.872 8.07303 11.699 7.90002L8.28596 4.48694C7.95246 4.15344 7.41175 4.15344 7.07825 4.48694C6.74475 4.82044 6.74475 5.36115 7.07825 5.69465L9.91898 8.53539L7.07873 11.3756C6.74523 11.7091 6.74523 12.2498 7.07873 12.5833C7.41224 12.9169 7.95295 12.9169 8.28645 12.5833L11.6995 9.17028C11.8759 8.99388 11.959 8.75951 11.9488 8.52849Z"
+                                    fill="white" />
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="orders-filter">
+                     <button class="orders-filter__close-btn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M15.2172 0.238628C14.899 -0.079543 14.3832 -0.0795426 14.065 0.238628L7.72792 6.57572L1.39083 0.238629C1.07266 -0.0795416 0.556807 -0.0795417 0.238636 0.238629C-0.0795351 0.5568 -0.0795347 1.07266 0.238636 1.39083L6.57573 7.72792L0.238628 14.065C-0.0795433 14.3832 -0.0795427 14.899 0.238628 15.2172C0.556799 15.5354 1.07266 15.5354 1.39083 15.2172L7.72792 8.88012L14.065 15.2172C14.3832 15.5354 14.8991 15.5354 15.2172 15.2172C15.5354 14.899 15.5354 14.3832 15.2172 14.065L8.88012 7.72792L15.2172 1.39083C15.5354 1.07266 15.5354 0.556799 15.2172 0.238628Z"
+                              fill="black" />
+                        </svg>
+                     </button>
+                     <h3 class="orders-filter__title">Фильтр</h3>
+                     <ul class="orders-filter__list">
+
+                        <li class="orders-filter__category">
+                           <button class="orders-filter__head" type="button" data-filter-accordion-btn>
+                              <p class="orders-filter__head-title">Марка</p>
+                              <img class="orders-filter__head-btn" src="assets/images/icons/arrow-down.svg" alt="">
+                           </button>
+                           <ul class="orders-filter__submenu" data-filter-accordion>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Марка</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Марка</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Марка</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Марка</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Марка</a>
+                              </li>
+                           </ul>
+                        </li>
+
+                        <li class="orders-filter__category">
+                           <button class="orders-filter__head" type="button" data-filter-accordion-btn>
+                              <p class="orders-filter__head-title">Объем</p>
+                              <img class="orders-filter__head-btn" src="assets/images/icons/arrow-down.svg" alt="">
+                           </button>
+                           <ul class="orders-filter__submenu" data-filter-accordion>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Объем</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Объем</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Объем</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Объем</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Объем</a>
+                              </li>
+                           </ul>
+                        </li>
+
+                        <li class="orders-filter__category">
+                           <button class="orders-filter__head" type="button" data-filter-accordion-btn>
+                              <p class="orders-filter__head-title">Все страны</p>
+                              <img class="orders-filter__head-btn" src="assets/images/icons/arrow-down.svg" alt="">
+                           </button>
+                           <ul class="orders-filter__submenu active" data-filter-accordion>
+                              <li class="orders-filter__submenu-item">
+                                 <img src="assets/images/icons/ru.svg" alt="Ru">
+                                 <a class="orders-filter__submenu-title" href="#">Россия</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <img src="assets/images/icons/tr.svg" alt="Ru">
+                                 <a class="orders-filter__submenu-title" href="#">Турция</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <img src="assets/images/icons/ru.svg" alt="Ru">
+                                 <a class="orders-filter__submenu-title" href="#">ОАЭ</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <img src="assets/images/icons/tr.svg" alt="Ru">
+                                 <a class="orders-filter__submenu-title" href="#">Казахстан</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <img src="assets/images/icons/ru.svg" alt="Ru">
+                                 <a class="orders-filter__submenu-title" href="#">Великобритания</a>
+                              </li>
+                           </ul>
+                        </li>
+
+                        <li class="orders-filter__category">
+                           <button class="orders-filter__head" type="button" data-filter-accordion-btn>
+                              <p class="orders-filter__head-title">Ориентир цены</p>
+                              <img class="orders-filter__head-btn" src="assets/images/icons/arrow-down.svg" alt="">
+                           </button>
+                           <ul class="orders-filter__submenu" data-filter-accordion>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Ориентир цены</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Ориентир цены</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Ориентир цены</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Ориентир цены</a>
+                              </li>
+                              <li class="orders-filter__submenu-item">
+                                 <a class="orders-filter__submenu-title" href="#">Ориентир цены</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                     <button class="orders-filter__btn btn btn-primary" type="button">
+                        Применить фильтр
+                     </button>
+                     <button class="orders-filter__extended" type="button">
+                        Расширенный фильтр
+                        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <mask id="path-1-inside-1_165_334" fill="white">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M2.9498 0C2.59082 0 2.2998 0.291014 2.2998 0.649999V2.08215C0.980689 2.39754 0 3.58424 0 5C0 6.41576 0.980689 7.60246 2.2998 7.91785V14.35C2.2998 14.709 2.59082 15 2.9498 15C3.30879 15 3.5998 14.709 3.5998 14.35V7.94003C4.96925 7.66214 6 6.45144 6 5C6 3.54856 4.96925 2.33786 3.5998 2.05997V0.65C3.5998 0.291015 3.30879 0 2.9498 0ZM9.15 0C8.79101 0 8.5 0.291014 8.5 0.649999V8.04148C7.08114 8.27952 6 9.5135 6 11C6 12.4865 7.08114 13.7205 8.5 13.9585V14.35C8.5 14.709 8.79101 15 9.15 15C9.50898 15 9.8 14.709 9.8 14.35V13.8922C11.0685 13.5421 12 12.3798 12 11C12 9.62019 11.0685 8.45794 9.8 8.10785V0.65C9.8 0.291015 9.50898 0 9.15 0ZM14.3999 0.649999C14.3999 0.291014 14.6909 0 15.0499 0C15.4089 0 15.6999 0.291015 15.6999 0.65V4.08208C17.0192 4.39737 18 5.58414 18 7C18 8.41586 17.0192 9.60264 15.6999 9.91792V14.35C15.6999 14.709 15.4089 15 15.0499 15C14.6909 15 14.3999 14.709 14.3999 14.35V9.93997C13.0306 9.66197 12 8.45134 12 7C12 5.54866 13.0306 4.33803 14.3999 4.06003V0.649999Z" />
+                           </mask>
+                           <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2.9498 0C2.59082 0 2.2998 0.291014 2.2998 0.649999V2.08215C0.980689 2.39754 0 3.58424 0 5C0 6.41576 0.980689 7.60246 2.2998 7.91785V14.35C2.2998 14.709 2.59082 15 2.9498 15C3.30879 15 3.5998 14.709 3.5998 14.35V7.94003C4.96925 7.66214 6 6.45144 6 5C6 3.54856 4.96925 2.33786 3.5998 2.05997V0.65C3.5998 0.291015 3.30879 0 2.9498 0ZM9.15 0C8.79101 0 8.5 0.291014 8.5 0.649999V8.04148C7.08114 8.27952 6 9.5135 6 11C6 12.4865 7.08114 13.7205 8.5 13.9585V14.35C8.5 14.709 8.79101 15 9.15 15C9.50898 15 9.8 14.709 9.8 14.35V13.8922C11.0685 13.5421 12 12.3798 12 11C12 9.62019 11.0685 8.45794 9.8 8.10785V0.65C9.8 0.291015 9.50898 0 9.15 0ZM14.3999 0.649999C14.3999 0.291014 14.6909 0 15.0499 0C15.4089 0 15.6999 0.291015 15.6999 0.65V4.08208C17.0192 4.39737 18 5.58414 18 7C18 8.41586 17.0192 9.60264 15.6999 9.91792V14.35C15.6999 14.709 15.4089 15 15.0499 15C14.6909 15 14.3999 14.709 14.3999 14.35V9.93997C13.0306 9.66197 12 8.45134 12 7C12 5.54866 13.0306 4.33803 14.3999 4.06003V0.649999Z"
+                              fill="white" />
+                           <path
+                              d="M2.2998 2.08215L2.6021 3.34651L3.5998 3.10797V2.08215H2.2998ZM2.2998 7.91785H3.5998V6.89203L2.6021 6.65349L2.2998 7.91785ZM3.5998 7.94003L3.34128 6.66599L2.2998 6.87733V7.94003H3.5998ZM3.5998 2.05997H2.2998V3.12267L3.34128 3.33401L3.5998 2.05997ZM8.5 8.04148L8.71509 9.32356L9.8 9.14155V8.04148H8.5ZM8.5 13.9585H9.8V12.8585L8.71509 12.6764L8.5 13.9585ZM9.8 13.8922L9.45413 12.639L8.5 12.9023V13.8922H9.8ZM9.8 8.10785H8.5V9.09765L9.45413 9.36099L9.8 8.10785ZM15.6999 4.08208H14.3999V5.10801L15.3977 5.34648L15.6999 4.08208ZM15.6999 9.91792L15.3977 8.65353L14.3999 8.89199V9.91792H15.6999ZM14.3999 9.93997H15.6999V8.87738L14.6586 8.66596L14.3999 9.93997ZM14.3999 4.06003L14.6586 5.33404L15.6999 5.12262V4.06003H14.3999ZM3.5998 0.649999C3.5998 1.00899 3.30879 1.3 2.9498 1.3V-1.3C1.87285 -1.3 0.999805 -0.426957 0.999805 0.649999H3.5998ZM3.5998 2.08215V0.649999H0.999805V2.08215H3.5998ZM1.3 5C1.3 4.19944 1.85461 3.52523 2.6021 3.34651L1.99751 0.817787C0.106763 1.26985 -1.3 2.96905 -1.3 5H1.3ZM2.6021 6.65349C1.85461 6.47477 1.3 5.80056 1.3 5H-1.3C-1.3 7.03095 0.106764 8.73015 1.99751 9.18221L2.6021 6.65349ZM3.5998 14.35V7.91785H0.999805V14.35H3.5998ZM2.9498 13.7C3.30879 13.7 3.5998 13.991 3.5998 14.35H0.999805C0.999805 15.427 1.87285 16.3 2.9498 16.3V13.7ZM2.2998 14.35C2.2998 13.991 2.59082 13.7 2.9498 13.7V16.3C4.02676 16.3 4.8998 15.427 4.8998 14.35H2.2998ZM2.2998 7.94003V14.35H4.8998V7.94003H2.2998ZM4.7 5C4.7 5.82097 4.11675 6.50864 3.34128 6.66599L3.85833 9.21406C5.82174 8.81565 7.3 7.08191 7.3 5H4.7ZM3.34128 3.33401C4.11675 3.49136 4.7 4.17903 4.7 5H7.3C7.3 2.91809 5.82174 1.18435 3.85833 0.785937L3.34128 3.33401ZM2.2998 0.65V2.05997H4.8998V0.65H2.2998ZM2.9498 1.3C2.59082 1.3 2.2998 1.00899 2.2998 0.65H4.8998C4.8998 -0.426955 4.02676 -1.3 2.9498 -1.3V1.3ZM9.8 0.649999C9.8 1.00899 9.50898 1.3 9.15 1.3V-1.3C8.07304 -1.3 7.2 -0.426956 7.2 0.649999H9.8ZM9.8 8.04148V0.649999H7.2V8.04148H9.8ZM7.3 11C7.3 10.1589 7.91206 9.45828 8.71509 9.32356L8.28491 6.7594C6.25023 7.10075 4.7 8.86806 4.7 11H7.3ZM8.71509 12.6764C7.91206 12.5417 7.3 11.8411 7.3 11H4.7C4.7 13.1319 6.25023 14.8992 8.28491 15.2406L8.71509 12.6764ZM9.8 14.35V13.9585H7.2V14.35H9.8ZM9.15 13.7C9.50898 13.7 9.8 13.991 9.8 14.35H7.2C7.2 15.427 8.07304 16.3 9.15 16.3V13.7ZM8.5 14.35C8.5 13.991 8.79102 13.7 9.15 13.7V16.3C10.227 16.3 11.1 15.427 11.1 14.35H8.5ZM8.5 13.8922V14.35H11.1V13.8922H8.5ZM10.7 11C10.7 11.78 10.1735 12.4405 9.45413 12.639L10.1459 15.1453C11.9634 14.6437 13.3 12.9796 13.3 11H10.7ZM9.45413 9.36099C10.1735 9.55954 10.7 10.22 10.7 11H13.3C13.3 9.02042 11.9634 7.35635 10.1459 6.8547L9.45413 9.36099ZM8.5 0.65V8.10785H11.1V0.65H8.5ZM9.15 1.3C8.79102 1.3 8.5 1.00899 8.5 0.65H11.1C11.1 -0.426957 10.227 -1.3 9.15 -1.3V1.3ZM15.0499 -1.3C13.9729 -1.3 13.0999 -0.426956 13.0999 0.649999H15.6999C15.6999 1.00899 15.4089 1.3 15.0499 1.3V-1.3ZM16.9999 0.65C16.9999 -0.426957 16.1269 -1.3 15.0499 -1.3V1.3C14.6909 1.3 14.3999 1.00899 14.3999 0.65H16.9999ZM16.9999 4.08208V0.65H14.3999V4.08208H16.9999ZM15.3977 5.34648C16.1453 5.52513 16.7 6.19938 16.7 7H19.3C19.3 4.9689 17.893 3.2696 16.0021 2.81769L15.3977 5.34648ZM16.7 7C16.7 7.80062 16.1453 8.47487 15.3977 8.65353L16.0021 11.1823C17.893 10.7304 19.3 9.0311 19.3 7H16.7ZM16.9999 14.35V9.91792H14.3999V14.35H16.9999ZM15.0499 16.3C16.1269 16.3 16.9999 15.427 16.9999 14.35H14.3999C14.3999 13.991 14.6909 13.7 15.0499 13.7V16.3ZM13.0999 14.35C13.0999 15.427 13.9729 16.3 15.0499 16.3V13.7C15.4089 13.7 15.6999 13.991 15.6999 14.35H13.0999ZM13.0999 9.93997V14.35H15.6999V9.93997H13.0999ZM14.6586 8.66596C13.8832 8.50854 13.3 7.82091 13.3 7H10.7C10.7 9.08177 12.178 10.8154 14.1412 11.214L14.6586 8.66596ZM13.3 7C13.3 6.17909 13.8832 5.49146 14.6586 5.33404L14.1412 2.78602C12.178 3.1846 10.7 4.91823 10.7 7H13.3ZM13.0999 0.649999V4.06003H15.6999V0.649999H13.0999Z"
+                              fill="#777777" mask="url(#path-1-inside-1_165_334)" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__row">
+            <a class="footer__logo" href="index.html">
+               <img src="assets/images/logo/logo-light.svg" alt="Global Coal Trade">
+            </a>
+            <div class="footer__orders">
+               <a class="footer__orders-link" href="orders.html">Заявки на покупку</a>
+               <a class="footer__orders-link" href="orders.html">Продажа</a>
+            </div>
+            <ul class="footer__menu">
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">О проекте</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="help.html">Помощь</a>
+               </li>
+               <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="blog.html">Блог</a>
+               </li>
+            </ul>
+            <button class="footer__btn" type="button" data-modal-form-open-btn>
+               Вход/регистрация
+               <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M13.3931 6.74874C13.3931 9.47385 11.184 11.683 8.45885 11.683C5.73374 11.683 3.52461 9.47385 3.52461 6.74874C3.52461 4.02364 5.73374 1.8145 8.45885 1.8145C11.184 1.8145 13.3931 4.02364 13.3931 6.74874ZM11.548 12.6214C13.656 11.5102 15.0931 9.29729 15.0931 6.74874C15.0931 3.08475 12.1228 0.114502 8.45885 0.114502C4.79486 0.114502 1.82461 3.08475 1.82461 6.74874C1.82461 9.29729 3.26166 11.5102 5.36965 12.6214C2.77748 13.7976 0.974609 16.4084 0.974609 19.4403H2.67461C2.67461 16.2458 5.2643 13.6561 8.45885 13.6561C11.6534 13.6561 14.2431 16.2458 14.2431 19.4403H15.9431C15.9431 16.4084 14.1402 13.7976 11.548 12.6214Z"
+                     fill="#FF8B03" />
+               </svg>
+
+            </button>
+            <div class="footer__info">
+               <span class="footer__info-text">Служба поддержки</span>
+               <a class="footer__info-tel" href="tel:74955325351">+7(495) 532-53-51</a>
+               <a class="footer__info-email" href="mailto:gelp@globalcoaltrade.com">
+                  gelp@globalcoaltrade.com
+               </a>
+            </div>
+         </div>
+      </div>
+   </footer>
+   </div>
+
+</body>
+
+</html>
